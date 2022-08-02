@@ -1,0 +1,110 @@
+
+DELL@DESKTOP-CFU4ES0 MINGW64 ~/Documents (master)
+$ cd /
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /
+$ cd /c
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c
+$ ls
+'$AV_AVG'/                  PerfLogs/                     git/
+'$Recycle.Bin'/            'Program Files'/               hiberfil.sys
+'$WinREAgent'/             'Program Files (x86)'/         jenkins/
+ Dell/                      ProgramData/                  pagefile.sys
+'Documents and Settings'@   Recovery/                     scrcpy/
+ DumpStack.log.tmp         'System Volume Information'/   swapfile.sys
+ Intel/                     Users/
+ OneDriveTemp/              Windows/
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c
+$ cd git/
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git
+$ ls
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git
+$ git config --global user.name "sureshgithub420"
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git
+$ git config --global user.email sureshdevops27@gmail.com
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git
+$ git clone https://github.com/sureshgithub420/master1.git
+Cloning into 'master1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git
+$ ls
+master1/
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git
+$ cd master1/
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ ls
+README.md
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ ls
+README.md  testdoc.txt
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git add testdoc.txt
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git status testdoc.txt
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testdoc.txt
+
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git commit -m "1st to github"
+[main 73842e4] 1st to github
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testdoc.txt
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sureshgithub420/master1.g
+it'
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git push -u origin master1
+error: src refspec master1 does not match any
+error: failed to push some refs to 'https://github.com/sureshgithub420/master1.g
+it'
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ ls
+README.md  testdoc.txt
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git push -u origin *
+error: src refspec README.md does not match any
+error: src refspec testdoc.txt does not match any
+error: failed to push some refs to 'https://github.com/sureshgithub420/master1.g
+it'
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 143.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sureshgithub420/master1.git
+   e578ac4..73842e4  main -> main
+branch 'main' set up to track 'origin/main'.
+
+DELL@DESKTOP-CFU4ES0 MINGW64 /c/git/master1 (main)
+$
