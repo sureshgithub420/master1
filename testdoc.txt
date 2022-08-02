@@ -1,3 +1,5 @@
 testttttttt
 
-testtttt doc updated in github want to push in local
+testtttt doc updated in github want to pull in local
+
+next now add in local to git hub by push 
